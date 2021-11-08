@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ipykernel = "*"
+ipython-sql = "*"
+black = "==21.9b0"
+pandas = "*"
+matplotlib = "*"
+psycopg2 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
