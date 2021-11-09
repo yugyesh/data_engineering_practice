@@ -1,5 +1,6 @@
 import pyspark
 
+
 sc = pyspark.SparkContext(appName="maps_and_lazy_evaluation")
 
 log_of_songs = [
@@ -25,3 +26,10 @@ def convert_song_to_lowercase(song):
 distributed_song_log.map(convert_song_to_lowercase)
 
 distributed_song_log.map(convert_song_to_lowercase).collect()
+
+# The original data remains same
+distributed_song_log.collect()
+
+
+# Anonymous lamda function for same task
+distributed_song_log.map(lambda song: song.lower()).collect()

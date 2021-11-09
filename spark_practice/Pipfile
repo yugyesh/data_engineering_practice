@@ -5,10 +5,15 @@ name = "pypi"
 
 [packages]
 pyspark = "*"
+findspark = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
 
 [dev-packages]
 pylint = "*"
 black = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3.8"
