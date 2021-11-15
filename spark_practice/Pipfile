@@ -9,6 +9,7 @@ findspark = "*"
 numpy = "*"
 pandas = "*"
 matplotlib = "*"
+spark-nlp = "==1.7.3"
 
 [dev-packages]
 pylint = "*"
